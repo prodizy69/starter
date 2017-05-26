@@ -1,0 +1,21 @@
+@import "material";
+@import "landing";
+@import "login-details";
+@import "business-detail";
+@import "template";
+@import "branch";
+@import "consumer-related";
+@import "returns";
+@import "reports";
+@import "deal";
+
+
+body {
+  	background-color: $color-accent / 0.80 ;
+}
+*, html, body, div, h1, h2, h3, h4, h5, h6, h7, p, span, input, .mdl-button, .mdl-layout__title {
+ font-family: $preferred_font;}
+
+
+ 
+

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+</head>
+
+<body>
+  <!-- Simple header with scrollable tabs. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header logInHeader">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <div class="">
+          <span class="mdl-layout-title">
+            <figure>
+              <img src="../img/logo.png">
+            </figure>
+          </span>
+          
+       </div>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">HOW IT WORKS?</a>
+          <a class="mdl-navigation__link" href="">HELP</a>
+          <a class="mdl-navigation__link" href="">FAQ</a>
+          <a class="mdl-navigation__link" href="">CONTACT US</a>
+          <a class="mdl-navigation__link" href="">Hi! John De...</a>
+          <button id="show-dialog">SIGN IN</button>
+          <a class="mdl-navigation__link" href="">
+            <i class="material-icons">notifications_active</i>
+          </a>
+      </nav>
+      </div>
+    </header>
+
+    <main class="mdl-layout verticalTabs">
+      <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--2-col bg-white">
+            <div class="mdl-tabs__tab-bar">
+              <a href="#businessDetail" class="mdl-tabs__tab">
+                <img src="../img/business.png">
+                <span>BUSINESS DETAIL</span>
+              </a>
+              <a href="#branch" class="mdl-tabs__tab">
+                <img src="../img/branch.png">
+                <span>BRANCH</span>
+              </a>
+              <a href="#deal" class="mdl-tabs__tab">
+                <img src="../img/deal.png">
+                <span>DEAL</span>
+              </a>
+              <a href="#consumerRelated" class="mdl-tabs__tab">
+                <img src="../img/consumer.png">
+                <span>CONSUMER RELATED</span>
+              </a>
+              <a href="#returns" class="mdl-tabs__tab is-active">
+                <img src="../img/returns.png">
+                <span>RETURNS</span>
+              </a>
+              <a href="#reports" class="mdl-tabs__tab">
+                <img src="../img/reports.png">
+                <span>REPORTS</span>
+              </a>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--10-col">
+            <div class="mdl-tabs__panel" id="businessDetail">
+              Business Details
+            </div>
+            <div class="mdl-tabs__panel" id="branch">
+              Branch
+            </div>
+            <div class="mdl-tabs__panel is-active" id="deal">
+              <div class="right-content-area">
+                <div class="mdl-layout mdl-js-layout">
+                  <div class="mdl-layout__header">
+                    <!-- Tabs -->
+                    <div class="mdl-layout__tab-bar mdl-js-ripple-effect"> <a href="#BusinessInfo" class="mdl-layout__tab is-active">ALL</a> <a href="#ChangePassword" class="mdl-layout__tab">SERVICES</a>                      <a href="#BankDetails" class="mdl-layout__tab">PRODUCTS</a> </div>
+                  </div>
+                  <!-- Tabs content -->
+                  <main class="mdl-layout__content">
+                    <!--Business Info content started-->
+                    <section class="mdl-layout__tab-panel is-active" id="BusinessInfo">
+                      <div class="page-content deal-info-cont-details">
+                        <div class="mdl-grid bankDetails-wrap ">
+                          <div class="mdl-cell mdl-cell--12-col search-area">
+                            <form class="contact-details-edit-form bankdetails-select">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                <input class="mdl-textfield__input" type="text" id="add-mailing-select" value="10" readonly tabIndex="-1">
+                                <label for="add-mailing-select" class="mdl-textfield__label">Show</label>
+                                <ul for="add-mailing-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item">15</li>
+                                  <li class="mdl-menu__item">20</li>
+                                  <li class="mdl-menu__item">25</li>
+                                </ul>
+                              </div>
+                            </form>
+                            <form class="search">
+                              <input type="text" name="search" placeholder="Search..">
+                            </form>
+
+                            <!-- Right aligned menu below button -->
+
+                            <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored addbtn"> Create New Deal <i class="material-icons">add</i> </button>
+                            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+                              <li class="mdl-menu__item">Product Deal</li>
+                              <li class="mdl-menu__item">Service Deal</li>
+                            </ul>
+                            <form class="contact-details-edit-form bankdetails-select pull-right">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                <input class="mdl-textfield__input" type="text" id="add-mailing-select2" value="Live" readonly tabIndex="-1">
+                                <label for="add-mailing-select2" class="mdl-textfield__label">Posted Live</label>
+                                <ul for="add-mailing-select2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item">15</li>
+                                  <li class="mdl-menu__item">20</li>
+                                  <li class="mdl-menu__item">25</li>
+                                </ul>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <!-- deals call out section -->
+                        <div class="mdl-grid deals-callout">
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#" id="show-dialog"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                        <div class="mdl-grid deals-callout">
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                              <figure class="deal-clout-img"> <img src="img/more-from-1.png" />
+                                <figcaption>
+                                  <h3>Preview</h3>
+                                </figcaption>
+                                <a href="#"></a>
+                              </figure>
+                            </div>
+                            <div class="mdl-card__title">
+                              <h4 class="mdl-card__title-text">Product</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text"> <span class="mdl-typography--font-light mdl-typography--subhead">Business Tax Returns <br/>
+                          Group Price: $700.00</span> </div>
+                            <div class="mdl-card__actions">
+                              <div class="popup-main" href="#"> <i class="material-icons">group</i>
+                                <div class="popup"> Group Price : $700.00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">date_range</i>
+                                <div class="popup"> 12/06/2016 - 12/24/2016 CET 00:00:00 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">add_shopping_cart</i>
+                                <div class="popup"> Sold : 45 </div>
+                              </div>
+                              <div class="popup-main" href="#"> <i class="material-icons">mode_edit</i>
+                                <div class="popup"> popup </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <button class="mdl-button loading">Loading...</button>
+                        </div>
+                    </section>
+                    <!--Business Info content end-->
+                    <section class="mdl-layout__tab-panel" id="ChangePassword">
+                      <div class="page-content">xyz</div>
+                    </section>
+                    <section class="mdl-layout__tab-panel" id="BankDetails">
+                      <div class="page-content">balu</div>
+                    </section>
+                  </main>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mdl-tabs__panel" id="consumerRelated">
+
+                <div class="mdl-grid totaldeal-wrap">
+                  <div class="mdl-cell mdl-cell--8-col">
+                    <div class="totaldeal-left ac-container">
+                      <div>
+                        <input class="accordian-input" id="ac-1" name="accordion-1" type="checkbox" checked />
+                        <label class="accordian-label" for="ac-1">Deal Information</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <form class="contact-details-edit-form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                <input class="mdl-textfield__input" type="text" id="add-select" value="Category" readonly tabIndex="-1">
+                                <label for="add-select" class="mdl-textfield__label">Select Category</label>
+                                <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item">Category1</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                </ul>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="first">
+                                <label class="mdl-textfield__label">Enter Deal Heading</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label">Enter Deal Description</label>
+                              </div>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-2" name="accordion-1" type="checkbox" checked/>
+                        <label class="accordian-label" for="ac-2">Reasons to Buy</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <form class="contact-details-edit-form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="first">
+                                <label class="mdl-textfield__label">Enter Deal Heading</label>
+                              </div>
+                              <p class="pull-right">+ Add Reasons</p>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-3" name="accordion-1" type="checkbox" checked/>
+                        <label class="accordian-label" for="ac-3">Product Features & Specifications</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <form class="contact-details-edit-form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="first">
+                                <label class="mdl-textfield__label">Part# or item#</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label">Product Features</label>
+                              </div>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Specifications 1</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Specifications 2</label>
+                                </div>
+                              </div>
+                              <div class="clearboth"></div>
+                              <p class="pull-right">+ Add Specifications</p>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-4" name="accordion-1" type="checkbox" checked/>
+                        <label class="accordian-label" for="ac-4">Product Features & Specifications</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <form class="contact-details-edit-form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                <input class="mdl-textfield__input" type="text" id="add-select" value="Currency" readonly tabIndex="-1">
+                                <label for="add-select" class="mdl-textfield__label">Select Currency</label>
+                                <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item">Category1</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                </ul>
+                              </div>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Enter Actual Price</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Enter Buy Now Price</label>
+                                </div>
+                              </div>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Enter Group Price</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Enter Group Size</label>
+                                </div>
+                              </div>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Deals Available</label>
+                                </div>
+                                <div class="mdl-textfield">
+                                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                                        <span class="mdl-radio__label">While Supply Lasts</span> </label>
+                                </div>
+                              </div>
+                              <span class="clearfix"></span>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                  <input class="mdl-textfield__input" type="text" id="first">
+                                  <label class="mdl-textfield__label">Limit per Customer</label>
+                                </div>
+                                <div class="mdl-textfield">
+                                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                                        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                                        <span class="mdl-radio__label">While Supply Lasts</span> </label>
+                                </div>
+                              </div>
+                              <span class="clearfix"></span>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-5" name="accordion-1" type="checkbox" checked/>
+                        <label class="accordian-label" for="ac-5">Preferred Start and End Times</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <form class="contact-details-edit-form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                <input class="mdl-textfield__input" type="text" id="add-select" value="Time Zone" readonly tabIndex="-1">
+                                <label for="add-select" class="mdl-textfield__label">Select Time Zone</label>
+                                <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item">Category1</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                </ul>
+                              </div>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                  <input class="mdl-textfield__input" type="text" id="add-select" value="Time" readonly tabIndex="-1">
+                                  <label for="add-select" class="mdl-textfield__label">Start Date</label>
+                                  <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                    <li class="mdl-menu__item">Category1</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                  </ul>
+                                  <span class="material-icons calendar">date_range</span> </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                  <input class="mdl-textfield__input" type="text" id="add-select" value="Time" readonly tabIndex="-1">
+                                  <label for="add-select" class="mdl-textfield__label">End Date</label>
+                                  <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                    <li class="mdl-menu__item">Category1</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                  </ul>
+                                  <span class="material-icons calendar">date_range</span> </div>
+                              </div>
+                              <span class="clearfix"></span>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-6" name="accordion-1" type="checkbox" checked/>
+                        <label class="accordian-label" for="ac-6">Shipping & Handling</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <div class="shipping-hand-inner">
+                              <div class="size"> </div>
+                            </div>
+                            <form class="contact-details-edit-form">
+                              <div>
+                                <div class="size">
+                                  <button class="mdl-button mdl-js-button mdl-button--raised"> Size </button>
+                                </div>
+                                <div class="size-categories"> <span>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="first">
+                                        <label class="mdl-textfield__label">Width</label>
+                                      </div>
+                                      </span> <span>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="first">
+                                        <label class="mdl-textfield__label">Hieght</label>
+                                      </div>
+                                      </span> <span>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="first">
+                                        <label class="mdl-textfield__label">Length</label>
+                                      </div>
+                                      </span> <span>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="first">
+                                        <label class="mdl-textfield__label">Girth</label>
+                                      </div>
+                                      </span> </div>
+                              </div>
+                              <div>
+                                <div class="size">
+                                  <button class="mdl-button mdl-js-button mdl-button--raised"> Weight </button>
+                                </div>
+                                <div class="size-categories weight-cat"> <span>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="first">
+                                        <label class="mdl-textfield__label">Width</label>
+                                      </div>
+                                      </span> <span>
+                                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="first">
+                                        <label class="mdl-textfield__label">Hieght</label>
+                                      </div>
+                                      </span> </div>
+                              </div>
+                              <div>
+                                <div class="size">
+                                  <button class="mdl-button mdl-js-button mdl-button--raised"> Carrier Types </button>
+                                </div>
+                                <div class="size-categories weight-cat categoreis"> <span> <img src="img/usps.jpg"> </span> <span><img src="img/ups.jpg"> </span> <span><img src="img/fedex.jpg"> </span>                                  </div>
+                              </div>
+                              <div class="name">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                  <input class="mdl-textfield__input" type="text" value="Type" readonly tabIndex="-1">
+                                  <label for="add-select" class="mdl-textfield__label">Container Type</label>
+                                  <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                    <li class="mdl-menu__item">Category1</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                  </ul>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                  <input class="mdl-textfield__input" type="text" value="Size" readonly tabIndex="-1">
+                                  <label for="add-select" class="mdl-textfield__label">Container Size</label>
+                                  <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                    <li class="mdl-menu__item">Category1</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                    <li class="mdl-menu__item">Category2</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
+                                <input class="mdl-textfield__input" type="text" id="add-select" value="Service Type" readonly tabIndex="-1">
+                                <label for="add-select" class="mdl-textfield__label">Select Service Type</label>
+                                <ul for="add-select" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item">Category1</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                  <li class="mdl-menu__item">Category2</li>
+                                </ul>
+                              </div>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-7" name="accordion-1" type="checkbox" />
+                        <label class="accordian-label" for="ac-7">Warranty, Return and Refund</label>
+                        <article class="ac-small">
+                          <div class="contact-details-edit">
+                            <form class="contact-details-edit-form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label">Please enter Return Policy details here</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label">Please enter Warranty details here</label>
+                              </div>
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                <label class="mdl-textfield__label">Please enter Refund Policy details here</label>
+                              </div>
+                              <p>Your registered contact number is : 408-836-0485</p>
+                            </form>
+                          </div>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-8" name="accordion-1" type="checkbox" />
+                        <label class="accordian-label" for="ac-8">Contact us</label>
+                        <article class="ac-small">
+                          <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell
+                            everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in
+                            the future when the spacecraft encounters a black hole does the computer call it an 'unknown
+                            entry event'? Why don't they know? If they don't know, that means we never told anyone. And if
+                            we never told anyone it means we never made it back. Hence we die down here. Just as a matter
+                            of deductive logic. </p>
+                        </article>
+                      </div>
+                      <div>
+                        <input class="accordian-input" id="ac-9" name="accordion-1" type="checkbox" />
+                        <label class="accordian-label" for="ac-9">Contact us</label>
+                        <article class="ac-small">
+                          <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell
+                            everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in
+                            the future when the spacecraft encounters a black hole does the computer call it an 'unknown
+                            entry event'? Why don't they know? If they don't know, that means we never told anyone. And if
+                            we never told anyone it means we never made it back. Hence we die down here. Just as a matter
+                            of deductive logic. </p>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="totaldeal-right">
+                      <div class="upload-img" id="show-dialog"><img src="img/upload-img.png"></div>
+                      <div class="upload-success"> <span>You’ve been successfully uploaed 6 images</span>
+                        <div class="clearboth"></div>
+                        <div class="upload-suc-images"> <span><img src="img/success-img.png"><i class="material-icons">highlight_off</i></span> <span><img src="img/success-img.png"><i class="material-icons">highlight_off</i></span>                          <span><img src="img/success-img.png"><i class="material-icons">highlight_off</i></span>
+                          <div class="clearboth"></div>
+                          <span><img src="img/success-img.png"><i class="material-icons">highlight_off</i></span> <span><img src="img/success-img.png"><i class="material-icons">highlight_off</i></span>                          <span><img src="img/success-img.png"><i class="material-icons">highlight_off</i></span> </div>
+                      </div>
+                      <div class="clearboth"></div>
+                      <div class="suc-img-btn">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Submit for Review</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Go to Preview</button>
+                        <button class="mdl-button savedraftbtn mdl-js-button mdl-button--raised mdl-js-ripple-effect">Save to Draft</button>
+                        <button class="mdl-button savedraftbtn mdl-js-button mdl-button--raised mdl-js-ripple-effect">Exit Without Saving</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="mdl-tabs__panel" id="returns">
+                Returns
+              </div>
+              <div class="mdl-tabs__panel" id="reports">
+                Reports
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    </div>
+</body>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+
+</html>

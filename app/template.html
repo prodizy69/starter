@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/print.css" media="print">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+</head>
+
+<body>
+<!-- Simple header with scrollable tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header logInHeader">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+    <div class=""><span class="mdl-layout-title">
+      <figure><img src="../img/logo.png"></figure>
+    </span></div>
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <a class="mdl-navigation__link" href="">HOW IT WORKS?</a>
+      <a class="mdl-navigation__link" href="">HELP</a>
+      <a class="mdl-navigation__link" href="">FAQ</a>
+      <a class="mdl-navigation__link" href="">CONTACT US</a>
+      <a class="mdl-navigation__link" href="">Hi! John De...</a>
+      <button id="show-dialog" >SIGN IN</button>
+      <a class="mdl-navigation__link" href="">
+        <i class="material-icons">notifications_active</i>
+      </a>
+    </nav>
+  </div>
+  </header>
+
+  <main class="mdl-layout verticalTabs">
+    <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-cell mdl-cell--2-col bg-white">
+          <div class="mdl-tabs__tab-bar">
+            <a href="#businessDetail" class="mdl-tabs__tab is-active">
+              <img src="../img/business.png">
+                <span>BUSINESS DETAIL</span>
+            </a>
+            <a href="#branch" class="mdl-tabs__tab">
+              <img src="../img/branch.png">
+                <span>BRANCH</span>
+            </a>                   
+            <a href="#deal" class="mdl-tabs__tab">
+              <img src="../img/deal.png">
+                <span>DEAL</span>
+            </a>
+            <a href="#consumerRelated" class="mdl-tabs__tab">
+              <img src="../img/consumer.png">
+                <span>CONSUMER RELATED</span>
+            </a>
+            <a href="#returns" class="mdl-tabs__tab">
+              <img src="../img/returns.png">
+                <span>RETURNS</span>
+            </a>
+            <a href="#reports" class="mdl-tabs__tab">
+              <img src="../img/reports.png">
+                <span>REPORTS</span>
+            </a>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--10-col">
+          <div class="mdl-tabs__panel is-active" id="businessDetail">
+            Business Details
+          </div>
+          <div class="mdl-tabs__panel" id="branch">
+            Branch
+          </div>   
+          <div class="mdl-tabs__panel" id="deal">
+            Deal
+          </div>   
+          <div class="mdl-tabs__panel" id="consumerRelated">
+            Consumer Related
+          </div>
+          <div class="mdl-tabs__panel" id="returns">
+            Returns
+          </div>
+          <div class="mdl-tabs__panel" id="reports">
+            Reports
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+</html>
